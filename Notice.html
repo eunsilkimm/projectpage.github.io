@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notices</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    form {
+      margin-bottom: 20px;
+      max-width: 500px;
+    }
+    input, textarea {
+      display: block;
+      width: 70%;
+      margin-top: 10px;
+      padding: 8px;
+      font-size: 14px;
+    }
+    
+    .form-container {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .form-box {
+      display: inline-block;
+      vertical-align: top;
+      width: 45%;
+      box-sizing: border-box;
+      margin: 0 2%;
+      background-color: #fffbea;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid rgba(0, 0, 0, 0.774);
+      text-align: left;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 5px 5px;
+      font-size: 14px;
+      background-color: #fff2a6;
+      border: 1px solid rgba(0, 0, 0, 0.774);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="logo.png" height="80"></a>
+  </header>
+
+  <div class="topnav">
+    <a href="index.html">Main</a>
+    <a href="Camera.html">Camera</a>
+    <a href="Film.html">Film</a>
+    <a href="Goods.html">Goods</a>
+    <a href="Place.html">Place</a>
+    <a href="Notice.html">Notice</a>
+  </div>
+
+  <div style="clear: both;"></div>
+  
+  <div class="form-container">
+  <div class="form-box">
+    <h3>📖 방명록</h3>
+    <p>전하고 싶은 말들을 남겨주세요 - !</p><br>
+    <form>
+      <label for="guest-name">이름</label>
+      <input type="text" id="guest-name" required><br>
+      <label for="guest-message">메시지</label>
+      <textarea id="guest-message" rows="5" required></textarea><br>
+      <button type="submit">저장</button>
+    </form>
+    </div>
+  <div class="form-box">
+    <h3>📬 문의사항</h3>
+    <p>문의가 있다면 남겨주세요 - !</p><br>
+    <form>
+      <label for="inquiry-name">이름</label>
+      <input type="text" id="inquiry-name" required><br>
+      <label for="inquiry-message">문의 내용</label>
+      <textarea id="inquiry-message" rows="5" required></textarea><br>
+      <button type="submit">저장</button>
+    </form>
+    </div>
+  </div>
+
+  <footer>
+    <ul id="company_info">   
+    <li>My film(주) | 대표자 : 김은실 | 주소 : 경기 성남시 수정구 성남대로 1342</li>
+    <li>사업등록번호 : 202-4349-43 | 호스팅 사업자 : 가천대학교 | 이메일 : dmstlf1128@gachon.ac.kr</li>
+    <li id="copyright">Copyright ⓒeunsil All Rights Reserved.</li>
+    </ul>
+  </footer>
+</body>
+</html>

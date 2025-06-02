@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETC</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    .gallery {
+      text-align: center;
+      padding: 20px;
+    }
+    .photo-item {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+      box-sizing: border-box;
+    }
+    .photo-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    .photo-img {
+      float: left;
+      width: 40%;
+    }
+
+    .photo-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .photo-details {
+      float: right;
+      width: 55%;
+    }
+
+    .photo-details h3 {
+      margin-top: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      .photo-img, .photo-details {
+        float: none;
+        width: 100%;
+      }
+    }
+
+    button {
+    background-color: #fff2a6;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    }
+    button:hover {
+      background-color: #f0df7c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="logo.png" height="80"></a>
+  </header>
+
+  <div class="topnav">
+    <a href="index.html">Main</a>
+    <a href="Camera.html">Camera</a>
+    <a href="Film.html">Film</a>
+    <a href="Goods.html">Goods</a>
+    <a href="Place.html">Place</a>
+    <a href="Notice.html">Notice</a>
+  </div>
+
+  <div style="clear: both;"></div>
+
+  <div class="gallery">
+    <div class="photo-item">
+      <div class="photo-img">
+      <img src="goods/book.png">
+      </div>
+      <div class="photo-details">
+      <br><br>
+      <h3>노트</h3>
+      <p>₩8,000</p>
+      <label for="size">노트 크기 :</label>
+      <select>
+        <option value="A5">A5</option>
+        <option value="B5">B5</option>
+      </select><br><br>
+      <label for="paper">내지 :</label>
+      <select>
+        <option value="grid">그리드</option>
+        <option value="line">라인</option>
+      </select><br>
+      <p>원하시는 사진 : <input type = "text"></p><br><br>
+      <button type="button">장바구니 담기</button>
+    </div>
+    <div style="clear: both;"></div>
+    </div>
+  </div>
+  
+  <footer>
+    <ul id="company_info">   
+    <li>My film(주) | 대표자 : 김은실 | 주소 : 경기 성남시 수정구 성남대로 1342</li>
+    <li>사업등록번호 : 202-4349-43 | 호스팅 사업자 : 가천대학교 | 이메일 : dmstlf1128@gachon.ac.kr</li>
+    <li id="copyright">Copyright ⓒeunsil All Rights Reserved.</li>
+    </ul>
+  </footer>
+</body>
+</html>
